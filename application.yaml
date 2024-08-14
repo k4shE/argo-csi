@@ -77,3 +77,6 @@ spec:
             enabled: true
           enableSecretRotation: true
           rotationPollInterval: 2m
+    - repoURL: 'https://github.com/k4shE/csi.git'
+      path: folder/dev
+      targetRevision: HEAD
