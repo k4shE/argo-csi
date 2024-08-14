@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-vault-csi-app
-  namespace: vault
+  namespace: argocd
 spec:
   project: default
   destination:
@@ -64,7 +64,7 @@ spec:
           # Vault UI
           ui:
             enabled: true
-            serviceType: "LoadBalancer"
+            serviceType: "ClusterIP"
             serviceNodePort: null
             externalPort: 80
 
